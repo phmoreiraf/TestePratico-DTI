@@ -15,8 +15,7 @@ function App() {
         setMelhorPetshop(response.data);
     };
 
-    return ( <
-        Formulario data = { data }
+    return ( < Formulario Data = { data }
         setData = { setData }
         caesPequenos = { caesPequenos }
         setCaesPequenos = { setCaesPequenos }
