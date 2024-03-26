@@ -57,9 +57,9 @@ function Formulario({
             </form>
             {melhorPetshop && (
                 <div>
-                    <h2>Melhor Petshop:</h2>
+                    <h2>Melhor Canil:</h2>
                     <p>Nome: {melhorPetshop.nome}</p>
-                    <p>Custo Total: {melhorPetshop.custoTotal}</p>
+                    <p>Preço total dos banhos: {melhorPetshop.custoTotal}</p>
                 </div>
             )}
         </div>
