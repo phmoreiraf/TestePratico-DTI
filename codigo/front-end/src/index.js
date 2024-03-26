@@ -1,8 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import App from "./App";
-// import reportWebVitals from "./reportWebVitals";
+import App from "./App.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -12,5 +11,3 @@ root.render(
   </React.StrictMode>
 );
 
-// comment out or remove the following line if reportWebVitals function is missing
-// reportWebVitals();
