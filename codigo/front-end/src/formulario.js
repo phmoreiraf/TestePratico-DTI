@@ -59,8 +59,8 @@ function Formulario({
 
                 <button type="submit">Consultar</button>
             </form>
-            <br>
-            <br>            
+            <br/>
+            <br/>            
             {melhorCanil && (
                 <div>
 
