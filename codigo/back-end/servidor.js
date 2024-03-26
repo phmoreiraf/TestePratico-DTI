@@ -31,8 +31,11 @@ function encontrarMelhorCanil(data, caesPequenos, caesGrandes) {
 }
 
 app.post('/melhor-canil', (req, res) => {
+    console.log("Recebendo solicitação para encontrar o melhor canil...");
     const { data, caesPequenos, caesGrandes } = req.body;
+    console.log("Dados recebidos:", { data, caesPequenos, caesGrandes });
     const melhorCanil = encontrarMelhorCanil(data, caesPequenos, caesGrandes);
+    console.log("Melhor canil encontrado:", melhorCanil);
     res.json(melhorCanil);
 });
 
