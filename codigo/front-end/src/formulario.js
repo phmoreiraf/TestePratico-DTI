@@ -59,12 +59,16 @@ function Formulario({
 
                 <button type="submit">Consultar</button>
             </form>
-            <br>
-            <br>            
+            <br/>
+            <br/>            
             {melhorCanil && (
                 <div>
+
+                    
                     O melhor canil é {melhorCanil.nome} com um custo total de{' '}
                     {melhorCanil.custoTotal}.
+
+                
                 </div>
             )}
         </div>
