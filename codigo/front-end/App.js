@@ -10,7 +10,7 @@ function App() {
     const [melhorPetshop, setMelhorPetshop] = useState(null);
 
     const encontrarMelhorPetshop = async() => {
-        const response = await axios.post('http://localhost:3000/melhor-petshop', {
+        const response = await axios.post('http://localhost:8080/melhor-petshop', {
             data: data,
             caesPequenos: caesPequenos,
             caesGrandes: caesGrandes,
@@ -19,8 +19,7 @@ function App() {
         setMelhorPetshop(response.data);
     };
 
-    return ( <
-        Formulario data = { data }
+    return ( < Formulario data = { data }
         setData = { setData }
         caesPequenos = { caesPequenos }
         setCaesPequenos = { setCaesPequenos }

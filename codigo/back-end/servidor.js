@@ -31,9 +31,9 @@ function encontrarMelhorPetshop(data, caesPequenos, caesGrandes) {
 }
 
 app.post('/melhor-petshop', (req, res) => {
-  const { data, caesPequenos, caesGrandes } = req.body;
-  const melhorPetshop = encontrarMelhorPetshop(data, caesPequenos, caesGrandes);
-  res.json(melhorPetshop);
+    const { data, caesPequenos, caesGrandes } = req.body;
+    const melhorPetshop = encontrarMelhorPetshop(data, caesPequenos, caesGrandes);
+    res.json(melhorPetshop);
 });
 
-app.listen(3000, () => console.log('Servidor rodando na porta 3000'));
+app.listen(8080, () => console.log('Servidor rodando na porta 8080'));
