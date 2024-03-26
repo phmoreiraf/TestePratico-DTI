@@ -1,32 +1,40 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import Formulario from './formulario';
-import './petshop.css';
 
 function App() {
     const [data, setData] = useState('');
     const [caesPequenos, setCaesPequenos] = useState('');
     const [caesGrandes, setCaesGrandes] = useState('');
-    const [melhorPetshop, setMelhorPetshop] = useState(null);
+    const [melhorCanil, setMelhorCanil] = useState(null);
+    const [loading, setLoading] = useState(false);
 
-    const encontrarMelhorPetshop = async() => {
-        const response = await axios.post('http://localhost:8080/melhor-petshop', {
-            data: data,
-            caesPequenos: caesPequenos,
-            caesGrandes: caesGrandes,
-        });
-
-        setMelhorPetshop(response.data);
+    const encontrarMelhorCanil = async () => {
+        setLoading(true);
+        try {
+            const response = await axios.post('http://localhost:8080/melhor-canil', {
+                data: data,
+                caesPequenos: caesPequenos,
+                caesGrandes: caesGrandes,
+            });
+            setMelhorCanil(response.data);
+        } catch (error) {
+            console.error('Erro ao obter melhor canil:', error);
+        }
+        setLoading(false);
     };
 
-    return ( < Formulario data = { data }
-        setData = { setData }
-        caesPequenos = { caesPequenos }
-        setCaesPequenos = { setCaesPequenos }
-        caesGrandes = { caesGrandes }
-        setCaesGrandes = { setCaesGrandes }
-        encontrarMelhorPetshop = { encontrarMelhorPetshop }
-        melhorPetshop = { melhorPetshop }
+    return (
+        <Formulario
+            data={data}
+            setData={setData}
+            caesPequenos={caesPequenos}
+            setCaesPequenos={setCaesPequenos}
+            caesGrandes={caesGrandes}
+            setCaesGrandes={setCaesGrandes}
+            encontrarMelhorCanil={encontrarMelhorCanil}
+            melhorCanil={melhorCanil}
+            loading={loading}
         />
     );
 }
