@@ -17,15 +17,16 @@ Para executar o sistema, siga as seguintes etapas:
 
 ## Lista de premissas assumidas
 
-- O usuário fornecerá uma data válida e a quantidade de cães pequenos e grandes.
+- O usuário pode fornecer uma data no formato dd/mm/aaaa.
+- O usuário pode fornecer a quantidade de cães pequenos e grandes a serem banhados.
+- O usuário pode fornecer a localização atual (opcional).
 - O servidor e o aplicativo React serão executados na mesma máquina, portanto, eles podem se comunicar através de localhost.
 
 ## Decisões de projeto
 
-- Escolhi usar Node.js para o back-end porque é eficiente e fácil de usar para criar servidores web.
-- Escolhi usar React para o front-end porque é uma biblioteca popular e poderosa para criar interfaces de usuário.
-- Decidi usar o Express no back-end para lidar com solicitações HTTP porque é simples e flexível.
-- Decidi usar o Axios no front-end para fazer solicitações HTTP porque é fácil de usar e funciona bem com o React.
+- Foi usada a biblioteca Express do node.js no back-end para criar um servidor HTTP.
+- Foi usado o framework Create React App no front-end para bootstrapar o projeto.
+- Foi usada a biblioteca Axios no front-end para fazer solicitações HTTP.
 
 ## O que mais é importante compartilhar sobre o projeto
 
