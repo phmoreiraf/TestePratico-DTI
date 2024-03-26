@@ -1,28 +1,34 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import Formulario from './Formulario';
 import './petshop.css';
-import Formulario from './formulario';
 
 function App() {
     const [data, setData] = useState('');
-    const [caesPequenos, setCaesPequenos] = useState(0);
-    const [caesGrandes, setCaesGrandes] = useState(0);
+    const [caesPequenos, setCaesPequenos] = useState('');
+    const [caesGrandes, setCaesGrandes] = useState('');
     const [melhorPetshop, setMelhorPetshop] = useState(null);
 
-    const encontrarMelhorPetshop = async(event) => {
-        event.preventDefault();
-        const response = await axios.post('http://localhost:3000/melhor-petshop', { data, caesPequenos, caesGrandes });
+    const encontrarMelhorPetshop = async () => {
+        const response = await axios.post('http://localhost:3000/melhor-petshop', {
+            data: data,
+            caesPequenos: caesPequenos,
+            caesGrandes: caesGrandes,
+        });
+
         setMelhorPetshop(response.data);
     };
 
-    return ( < Formulario Data = { data }
-        setData = { setData }
-        caesPequenos = { caesPequenos }
-        setCaesPequenos = { setCaesPequenos }
-        caesGrandes = { caesGrandes }
-        setCaesGrandes = { setCaesGrandes }
-        encontrarMelhorPetshop = { encontrarMelhorPetshop }
-        melhorPetshop = { melhorPetshop }
+    return (
+        <Formulario
+            data={data}
+            setData={setData}
+            caesPequenos={caesPequenos}
+            setCaesPequenos={setCaesPequenos}
+            caesGrandes={caesGrandes}
+            setCaesGrandes={setCaesGrandes}
+            encontrarMelhorPetshop={encontrarMelhorPetshop}
+            melhorPetshop={melhorPetshop}
         />
     );
 }
