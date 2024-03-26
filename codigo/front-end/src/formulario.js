@@ -7,15 +7,15 @@ function Formulario({
     setCaesPequenos,
     caesGrandes,
     setCaesGrandes,
-    encontrarMelhorPetshop,
-    melhorPetshop,
+    encontrarMelhorCanil,
+    melhorCanil,
     loading,
 }) {
     return (
         <div className="container">
-            <h1>PetShop</h1>
+            <h1>Canil</h1>
             <h2>Formulário de consulta</h2>
-            <form id="intention-form" onSubmit={encontrarMelhorPetshop}>
+            <form id="intention-form" onSubmit={encontrarMelhorCanil}>
                 <label htmlFor="data">Data:</label>
                 <input
                     type="date"
@@ -55,11 +55,11 @@ function Formulario({
                     {loading ? 'Consultando...' : 'Consultar'}
                 </button>
             </form>
-            {melhorPetshop && (
+            {melhorCanil && (
                 <div>
                     <h2>Melhor Canil:</h2>
-                    <p>Nome: {melhorPetshop.nome}</p>
-                    <p>Preço total dos banhos: {melhorPetshop.custoTotal}</p>
+                    <p>Nome: {melhorCanil.nome}</p>
+                    <p>Preço Total dos Banhos: {melhorCanil.precoTotal}</p>
                 </div>
             )}
         </div>
