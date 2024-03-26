@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+const { isWeekend } = require('date-fns');
 const app = express();
 app.use(express.json());
 app.use(cors());
@@ -13,8 +14,10 @@ function encontrarMelhorCanil(data, caesPequenos, caesGrandes) {
     ];
 
     // Verifica se a data é um dia da semana ou fim de semana
-    const dia = new Date(data).getDay();
-    const ehFimDeSemana = dia === 0 || dia === 6;
+    //const dia = new Date(data).getDay();
+    //const ehFimDeSemana = dia === 0 || dia === 6;
+
+    const ehFimDeSemana = isWeekend(new Date(data));
 
     let melhorCanil = null;
     let custoMinimo = Infinity;
