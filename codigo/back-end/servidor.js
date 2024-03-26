@@ -2,10 +2,10 @@ const express = require('express');
 const app = express();
 app.use(express.json());
 
-function encontrarMelhorPetshop(data, caesPequenos, caesGrandes) {
-    const petshops = [
-        { nome: "Meu Canino Feliz", distancia: 2, diaDaSemana: { pequeno: 20, grande: 40 }, fimDeSemana: { pequeno: 24, grande: 48 } },
-        { nome: "Vai Rex", distancia: 1.7, diaDaSemana: { pequeno: 15, grande: 50 }, fimDeSemana: { pequeno: 20, grande: 55 } },
+function encontrarMelhorCanil(data, caesPequenos, caesGrandes) {
+    const canis = [
+        { nome: "Canil Feliz", distancia: 2, diaDaSemana: { pequeno: 20, grande: 40 }, fimDeSemana: { pequeno: 24, grande: 48 } },
+        { nome: "Vai Cachorro", distancia: 1.7, diaDaSemana: { pequeno: 15, grande: 50 }, fimDeSemana: { pequeno: 20, grande: 55 } },
         { nome: "ChowChawgas", distancia: 0.8, diaDaSemana: { pequeno: 30, grande: 45 }, fimDeSemana: { pequeno: 30, grande: 45 } }
     ];
 
@@ -13,27 +13,27 @@ function encontrarMelhorPetshop(data, caesPequenos, caesGrandes) {
     const dia = new Date(data).getDay();
     const ehFimDeSemana = dia === 0 || dia === 6;
 
-    let melhorPetshop = null;
+    let melhorCanil = null;
     let custoMinimo = Infinity;
 
-    for (const petshop of petshops) {
+    for (const canil of canis) {
         const custo = ehFimDeSemana ?
-            petshop.fimDeSemana.pequeno * caesPequenos + petshop.fimDeSemana.grande * caesGrandes :
-            petshop.diaDaSemana.pequeno * caesPequenos + petshop.diaDaSemana.grande * caesGrandes;
+            canil.fimDeSemana.pequeno * caesPequenos + canil.fimDeSemana.grande * caesGrandes :
+            canil.diaDaSemana.pequeno * caesPequenos + canil.diaDaSemana.grande * caesGrandes;
 
-        if (custo < custoMinimo || (custo === custoMinimo && petshop.distancia < melhorPetshop.distancia)) {
-            melhorPetshop = petshop;
+        if (custo < custoMinimo || (custo === custoMinimo && canil.distancia < melhorCanil.distancia)) {
+            melhorCanil = canil;
             custoMinimo = custo;
         }
     }
 
-    return { nome: melhorPetshop.nome, custoTotal: custoMinimo };
+    return { nome: melhorCanil.nome, custoTotal: custoMinimo };
 }
 
-app.post('/melhor-petshop', (req, res) => {
+app.post('/melhor-canil', (req, res) => {
     const { data, caesPequenos, caesGrandes } = req.body;
-    const melhorPetshop = encontrarMelhorPetshop(data, caesPequenos, caesGrandes);
-    res.json(melhorPetshop);
+    const melhorCanil = encontrarMelhorCanil(data, caesPequenos, caesGrandes);
+    res.json(melhorCanil);
 });
 
 app.listen(8080, () => console.log('Servidor rodando na porta 8080'));
