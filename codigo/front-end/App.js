@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import Formulario from './Formulario';
+import Formulario from './formulario';
 import './petshop.css';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     const [caesGrandes, setCaesGrandes] = useState('');
     const [melhorPetshop, setMelhorPetshop] = useState(null);
 
-    const encontrarMelhorPetshop = async () => {
+    const encontrarMelhorPetshop = async() => {
         const response = await axios.post('http://localhost:3000/melhor-petshop', {
             data: data,
             caesPequenos: caesPequenos,
@@ -19,16 +19,15 @@ function App() {
         setMelhorPetshop(response.data);
     };
 
-    return (
-        <Formulario
-            data={data}
-            setData={setData}
-            caesPequenos={caesPequenos}
-            setCaesPequenos={setCaesPequenos}
-            caesGrandes={caesGrandes}
-            setCaesGrandes={setCaesGrandes}
-            encontrarMelhorPetshop={encontrarMelhorPetshop}
-            melhorPetshop={melhorPetshop}
+    return ( <
+        Formulario data = { data }
+        setData = { setData }
+        caesPequenos = { caesPequenos }
+        setCaesPequenos = { setCaesPequenos }
+        caesGrandes = { caesGrandes }
+        setCaesGrandes = { setCaesGrandes }
+        encontrarMelhorPetshop = { encontrarMelhorPetshop }
+        melhorPetshop = { melhorPetshop }
         />
     );
 }
