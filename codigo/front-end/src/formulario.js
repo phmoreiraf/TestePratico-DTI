@@ -20,7 +20,7 @@ function Formulario({
     return (
         <div class="container">
         <div class="form-image">
-            <img src="img/dog.png" alt="">
+            <img src="img/dog.jpg" alt="">
         </div>
         <div class="form">
             <form id="intention-form" onSubmit={handleSubmit}>
