@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './petshop.css';
-import Formulario from './Formulario';
+import Formulario from './formulario';
 
 function App() {
     const [data, setData] = useState('');
