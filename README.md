@@ -6,6 +6,7 @@ Este projeto é um sistema simples para encontrar o melhor petshop com base na d
 
 Para executar o sistema, siga as seguintes etapas:
 
+0. Usar esse sistema apenas se tiver acesso a internet.
 1. Baixe o código fonte do repositório.
 2. Navegue até a pasta do back-end: `cd codigo/back-end`.
 3. Instale as dependências necessárias com `npm install`.
@@ -25,8 +26,9 @@ Para executar o sistema, siga as seguintes etapas:
 ## Decisões de projeto
 
 - Foi usada a biblioteca Express do node.js no back-end para criar um servidor HTTP.
+- Foi usada a biblioteca cors pois o dominia da aplicação é diferente do dominio do servidor.
 - Foi usado o framework Create React App no front-end para bootstrapar o projeto.
-- Foi usada a biblioteca Axios no front-end para fazer solicitações HTTP.
+- Foi usada a biblioteca Axios do react no front-end para fazer solicitações HTTP.
 
 ## O que mais é importante compartilhar sobre o projeto
 

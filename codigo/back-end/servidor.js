@@ -1,6 +1,10 @@
 const express = require('express');
+const cors = require('cors');
+const { isWeekend } = require('date-fns');
 const app = express();
 app.use(express.json());
+app.use(cors());
+
 
 function encontrarMelhorCanil(data, caesPequenos, caesGrandes) {
     const canis = [
@@ -10,8 +14,10 @@ function encontrarMelhorCanil(data, caesPequenos, caesGrandes) {
     ];
 
     // Verifica se a data é um dia da semana ou fim de semana
-    const dia = new Date(data).getDay();
-    const ehFimDeSemana = dia === 0 || dia === 6;
+    //const dia = new Date(data).getDay();
+    //const ehFimDeSemana = dia === 0 || dia === 6;
+
+    const ehFimDeSemana = isWeekend(new Date(data));
 
     let melhorCanil = null;
     let custoMinimo = Infinity;
@@ -31,8 +37,11 @@ function encontrarMelhorCanil(data, caesPequenos, caesGrandes) {
 }
 
 app.post('/melhor-canil', (req, res) => {
+    console.log("Recebendo solicitação para encontrar o melhor canil...");
     const { data, caesPequenos, caesGrandes } = req.body;
+    console.log("Dados recebidos:", { data, caesPequenos, caesGrandes });
     const melhorCanil = encontrarMelhorCanil(data, caesPequenos, caesGrandes);
+    console.log("Melhor canil encontrado:", melhorCanil);
     res.json(melhorCanil);
 });
 

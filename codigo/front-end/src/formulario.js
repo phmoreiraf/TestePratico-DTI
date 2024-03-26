@@ -9,13 +9,19 @@ function Formulario({
     setCaesGrandes,
     encontrarMelhorCanil,
     melhorCanil,
-    loading,
 }) {
+    const handleSubmit = (event) => {
+        event.preventDefault(); // Impede o comportamento padrão do formulário
+
+        // Chama a função para encontrar o melhor canil
+        encontrarMelhorCanil();
+    };
+
     return (
         <div className="container">
-            <h1>Canil</h1>
+            <h1>PetShop</h1>
             <h2>Formulário de consulta</h2>
-            <form id="intention-form" onSubmit={encontrarMelhorCanil}>
+            <form id="intention-form" onSubmit={handleSubmit}>
                 <label htmlFor="data">Data:</label>
                 <input
                     type="date"
@@ -51,15 +57,18 @@ function Formulario({
                     required
                 />
 
-                <button type="submit" disabled={loading}>
-                    {loading ? 'Consultando...' : 'Consultar'}
-                </button>
+                <button type="submit">Consultar</button>
             </form>
+            <br/>
+            <br/>            
             {melhorCanil && (
                 <div>
-                    <h2>Melhor Canil:</h2>
-                    <p>Nome: {melhorCanil.nome}</p>
-                    <p>Preço Total dos Banhos: {melhorCanil.precoTotal}</p>
+
+                    
+                    O melhor canil é {melhorCanil.nome} com um custo total de{' '}
+                    {melhorCanil.custoTotal}.
+
+                
                 </div>
             )}
         </div>
