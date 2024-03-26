@@ -26,6 +26,7 @@ Para executar o sistema, siga as seguintes etapas:
 ## Decisões de projeto
 
 - Foi usada a biblioteca Express do node.js no back-end para criar um servidor HTTP.
+- Foi usada a biblioteca cors pois o dominia da aplicação é diferente do dominio do servidor.
 - Foi usado o framework Create React App no front-end para bootstrapar o projeto.
 - Foi usada a biblioteca Axios do react no front-end para fazer solicitações HTTP.
 
