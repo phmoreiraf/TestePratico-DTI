@@ -1,5 +1,14 @@
 {
-  "dependencies": {
-    "express": "^4.19.2"
-  }
+    "name": "back-end",
+    "version": "1.0.0",
+    "description": "Back-end para aplicação de seleção de pet shop",
+    "main": "servidor.js",
+    "scripts": {
+        "start": "node servidor.js"
+    },
+    "dependencies": {
+        "axios": "^0.25.0",
+        "express": "^4.19.2",
+        "nodemon": "^2.0.15"
+    }
 }
