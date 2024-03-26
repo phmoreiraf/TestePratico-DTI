@@ -7,13 +7,13 @@ Este projeto é um sistema simples para encontrar o melhor petshop com base na d
 Para executar o sistema, siga as seguintes etapas:
 
 1. Baixe o código fonte do repositório.
-1. Navegue até a pasta do back-end: `cd codigo/back-end`.
-1. Instale as dependências necessárias com `npm install`.
-1. Inicie o servidor com `npm start`.
-1. Navegue até a pasta do front-end: `cd codigo/front-end`.
-1. Instale as dependências necessárias com npm install.
-1. Inicie o aplicativo com `npm start`.
-1. O aplicativo estará disponível em http://localhost:3000.
+2. Navegue até a pasta do back-end: `cd codigo/back-end`.
+3. Instale as dependências necessárias com `npm install`.
+4. Inicie o servidor com `node servidor.js`.
+5. Em outro terminal navegue até a pasta do front-end: `cd codigo/front-end`.
+6. Instale as dependências necessárias com `npm install`.
+7. Inicie o aplicativo com `npm start`.
+8. O aplicativo estará disponível em http://localhost:3000.
 
 ## Lista de premissas assumidas
 
