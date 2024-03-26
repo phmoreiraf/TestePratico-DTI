@@ -88,6 +88,7 @@ body {
 .input-group {
     flex-wrap: wrap;
     justify-content: space-between;
+    flex-direction: column;
     padding: 1rem 0;
 }
 
@@ -95,6 +96,11 @@ body {
     display: flex;
     flex-direction: column;
     margin-bottom: 1.1rem;
+}
+
+.input-box {
+    margin-bottom: 10px;
+    /* Adiciona espaço entre os campos */
 }
 
 .input-box input {
