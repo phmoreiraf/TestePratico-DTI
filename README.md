@@ -4,11 +4,16 @@ Este projeto é um sistema simples para encontrar o melhor petshop com base na d
 
 ## Instruções para executar o sistema
 
-1. Instale o Node.js e o npm se ainda não os tiver instalado.
-2. Clone este repositório ou baixe os arquivos do projeto.
-3. No diretório do projeto, execute `npm install` para instalar as dependências necessárias.
-4. Execute `node servidor.js` para iniciar o servidor.
-5. Em outro terminal, navegue até o diretório do projeto e execute `npm start` para iniciar o aplicativo React.
+Para executar o sistema, siga as seguintes etapas:
+
+1. Baixe o código fonte do repositório.
+1. Navegue até a pasta do back-end: `cd codigo/back-end`.
+1. Instale as dependências necessárias com `npm install`.
+1. Inicie o servidor com `npm start`.
+1. Navegue até a pasta do front-end: `cd codigo/front-end`.
+1. Instale as dependências necessárias com npm install.
+1. Inicie o aplicativo com `npm start`.
+1. O aplicativo estará disponível em http://localhost:3000.
 
 ## Lista de premissas assumidas
 
