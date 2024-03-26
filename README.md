@@ -27,7 +27,7 @@ Para executar o sistema, siga as seguintes etapas:
 
 - Foi usada a biblioteca Express do node.js no back-end para criar um servidor HTTP.
 - Foi usado o framework Create React App no front-end para bootstrapar o projeto.
-- Foi usada a biblioteca Axios no front-end para fazer solicitações HTTP.
+- Foi usada a biblioteca Axios do react no front-end para fazer solicitações HTTP.
 
 ## O que mais é importante compartilhar sobre o projeto
 
