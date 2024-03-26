@@ -9,25 +9,26 @@ function encontrarMelhorPetshop(data, caesPequenos, caesGrandes) {
         { nome: "ChowChawgas", distancia: 0.8, diaDaSemana: { pequeno: 30, grande: 45 }, fimDeSemana: { pequeno: 30, grande: 45 } }
     ];
 
-    // Verifica se a data é um dia da semana ou fim de semana
     const dia = new Date(data).getDay();
-    const ehFimDeSemana = dia === 0 || dia === 6;
+    const isFimDeSemana = [0, 6].includes(dia);
 
     let melhorPetshop = null;
-    let custoMinimo = Infinity;
+    let melhorCusto = Infinity;
 
     for (const petshop of petshops) {
-        const custo = ehFimDeSemana ?
-            petshop.fimDeSemana.pequeno * caesPequenos + petshop.fimDeSemana.grande * caesGrandes :
-            petshop.diaDaSemana.pequeno * caesPequenos + petshop.diaDaSemana.grande * caesGrandes;
+        const custo = isFimDeSemana
+            ? petshop.fimDeSemana.pequeno * caesPequenos + petshop.fimDeSemana.grande * caesGrandes
+            : petshop.diaDaSemana.pequeno * caesPequenos + petshop.diaDaSemana.grande * caesGrandes;
 
-        if (custo < custoMinimo || (custo === custoMinimo && petshop.distancia < melhorPetshop.distancia)) {
+        if (custo < melhorCusto) {
             melhorPetshop = petshop;
-            custoMinimo = custo;
+            melhorCusto = custo;
+        } else if (custo === melhorCusto && petshop.distancia < melhorPetshop.distancia) {
+            melhorPetshop = petshop;
         }
     }
 
-    return { nome: melhorPetshop.nome, custoTotal: custoMinimo };
+    return { nome: melhorPetshop.nome, custoTotal: melhorCusto };
 }
 
 app.post('/melhor-petshop', (req, res) => {
