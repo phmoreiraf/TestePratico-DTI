@@ -18,10 +18,18 @@ function Formulario({
     };
 
     return (
-        <div className="container">
-            <h1>PetShop</h1>
-            <h2>Formulário de consulta</h2>
+        <div class="container">
+        <div class="form-image">
+            <img src="assets/img//undraw_shopping_re_3wst.svg" alt="">
+        </div>
+        <div class="form">
             <form id="intention-form" onSubmit={handleSubmit}>
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadastre-se</h1>
+                    </div>
+                </div>
+        
                 <label htmlFor="data">Data:</label>
                 <input
                     type="date"
