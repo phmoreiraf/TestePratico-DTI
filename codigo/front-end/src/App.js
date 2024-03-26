@@ -11,12 +11,14 @@ function App() {
 
     const encontrarMelhorCanil = async () => {
         setLoading(true);
+        console.log("Enviando solicitação para encontrar o melhor canil...");
         try {
             const response = await axios.post('http://localhost:8080/melhor-canil', {
                 data: data,
                 caesPequenos: caesPequenos,
                 caesGrandes: caesGrandes,
             });
+            console.log("Resposta do servidor:", response.data);
             setMelhorCanil(response.data);
         } catch (error) {
             console.error('Erro ao obter melhor canil:', error);
