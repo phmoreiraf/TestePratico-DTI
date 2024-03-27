@@ -21,7 +21,6 @@ Para executar o sistema, siga as seguintes etapas:
 
 - O usuário pode fornecer uma data no formato dd/mm/aaaa.
 - O usuário pode fornecer a quantidade de cães pequenos e grandes a serem banhados.
-- O usuário pode fornecer a localização atual (opcional).
 - O servidor e o aplicativo React serão executados na mesma máquina, portanto, eles podem se comunicar através de localhost.
 
 ## Decisões de projeto
