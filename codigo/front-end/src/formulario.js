@@ -22,7 +22,7 @@ function Formulario({
         <
         div className = "form-image" >
         <
-        img src = "img/dog.jpg"
+        img src = ""
         alt = "" / >
         <
         /div> <
@@ -95,7 +95,10 @@ function Formulario({
         <
         button type = "submit" > Consultar < /button> <
         /div> <
-        /form> {
+        /form> <
+        br / >
+        <
+        br / > {
             melhorCanil && ( <
                 div >
                 O melhor canil é { melhorCanil.nome }
