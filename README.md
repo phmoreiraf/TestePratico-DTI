@@ -32,8 +32,8 @@ Videos de utilização - Parte 1 e Parte 2 - https://www.youtube.com/playlist?li
 - Foi usada a biblioteca Express do Node.JS no back-end para criar um servidor HTTP.
 - Foi usada a biblioteca cors pois o dominio da aplicação é diferente do dominio do servidor.
 - Foi usado o getday para selecionar se o dia é final de semana ou não.
-- Foi usado o framework Create React App no front-end do projeto (Primeiro contato mais profundo).
-- Foi usada a biblioteca Axios do react no front-end para fazer solicitações HTTP (Primeiro contato mais profundo).
+- Foi usado o framework Create React App no front-end do projeto.
+- Foi usada a biblioteca Axios do react no front-end para fazer solicitações HTTP.
 - Foi usado o HTML e o CSS para o layout do sistema.
 - O sistema foi divido seguinte o processo de modularidade.
 
