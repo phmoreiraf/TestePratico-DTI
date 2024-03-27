@@ -17,6 +17,11 @@ Para executar o sistema, siga as seguintes etapas:
 8. O aplicativo estará disponível em http://localhost:3000.
 9. Dentro do sistema coloque o zoom do navegador o menor possivel para poder visualizar tudo.
 
+Videos
+
+Video usando a partir do github desktop - 
+Video usando a partir do repositório baixado - 
+
 ## Lista de premissas assumidas
 
 - O usuário pode fornecer uma data no formato dd/mm/aaaa.
