@@ -24,8 +24,8 @@ function encontrarMelhorCanil(data, caesPequenos, caesGrandes) {
 
     for (const canil of canis) {
         const custo = ehFimDeSemana ?
-            canil.fimDeSemana.pequeno * caesPequenos + canil.fimDeSemana.grande * caesGrandes :
-            canil.diaDaSemana.pequeno * caesPequenos + canil.diaDaSemana.grande * caesGrandes;
+            (canil.fimDeSemana.pequeno * caesPequenos) + (canil.fimDeSemana.grande * caesGrandes) :
+            (canil.diaDaSemana.pequeno * caesPequenos) + (canil.diaDaSemana.grande * caesGrandes);
 
         if (custo < custoMinimo || (custo === custoMinimo && canil.distancia < melhorCanil.distancia)) {
             melhorCanil = canil;
