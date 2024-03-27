@@ -25,12 +25,12 @@ Para executar o sistema, siga as seguintes etapas:
 
 ## Decisões de projeto
 
-- Foi usada a biblioteca Express do node.js no back-end para criar um servidor HTTP.
-- Foi usada a biblioteca cors pois o dominia da aplicação é diferente do dominio do servidor.
+- Foi usada a biblioteca Express do Node.JS no back-end para criar um servidor HTTP.
+- Foi usada a biblioteca cors pois o dominio da aplicação é diferente do dominio do servidor.
 - Foi usada a biblioteca date-fns para filtrar se o dia selecionado é final de semana ou não.
-- Foi usado o framework Create React App no front-end para bootstrapar o projeto.
+- Foi usado o framework Create React App no front-end do projeto.
 - Foi usada a biblioteca Axios do react no front-end para fazer solicitações HTTP.
 
 ## O que mais é importante compartilhar sobre o projeto
 
-Este projeto é uma implementação simplificada e não inclui recursos como autenticação de usuário, persistência de dados ou manipulação de erros robusta. Ele serve como um ponto de partida e pode ser expandido para incluir esses e outros recursos conforme necessário.
+Este projeto é uma implementação simples e não possui recursos como autenticação de usuário, persistência de dados ou manipulação de erros robusta. Ele serve como um ponto de partida podendo mostrar os conhecimentos nos frameworks Node.JS, Reacts e o uso da estrutura basica de criação de uma pagina web. Além de tudo pode ser expandido para incluir outros recursos assim melhorando o sistema.
