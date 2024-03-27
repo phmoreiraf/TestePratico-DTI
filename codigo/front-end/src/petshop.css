@@ -28,17 +28,18 @@ body {
 }
 
 .form-image {
-    width: 24rem;
+    width: 27rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color: #fde3a7d7;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 .form-image img {
-    width: 25rem;
+    width: 27rem;
+    height: 100%;
 }
 
 .form {
@@ -49,20 +50,16 @@ body {
     align-items: center;
     background-color: #fff;
     padding: 5rem;
-    /* Adaptação para dispositivos menores */
     @media screen and (max-width: 768px) {
         width: 100%;
         padding: 2rem;
     }
-    /* Adaptação para dispositivos ainda menores */
     @media screen and (max-width: 480px) {
         .form-header h1 {
             font-size: 1.5rem;
-            /* Reduza o tamanho da fonte do título */
         }
         .input-box input {
             font-size: 0.9rem;
-            /* Reduza o tamanho da fonte dos campos de entrada */
         }
     }
 }
