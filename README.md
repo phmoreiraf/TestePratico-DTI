@@ -28,7 +28,7 @@ Para executar o sistema, siga as seguintes etapas:
 
 - Foi usada a biblioteca Express do Node.JS no back-end para criar um servidor HTTP.
 - Foi usada a biblioteca cors pois o dominio da aplicação é diferente do dominio do servidor.
-- Foi usada a o getday para selecionar se o dia é final de semana ou não.
+- Foi usado o getday para selecionar se o dia é final de semana ou não.
 - Foi usado o framework Create React App no front-end do projeto.
 - Foi usada a biblioteca Axios do react no front-end para fazer solicitações HTTP.
 
