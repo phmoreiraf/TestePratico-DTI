@@ -13,10 +13,6 @@ function encontrarMelhorCanil(data, caesPequenos, caesGrandes) {
         { nome: "ChowChawgas", distancia: 0.8, diaDaSemana: { pequeno: 30, grande: 45 }, fimDeSemana: { pequeno: 30, grande: 45 } }
     ];
 
-    // Verifica se a data é um dia da semana ou fim de semana
-    //const dia = new Date(data).getDay();
-    //const ehFimDeSemana = dia === 0 || dia === 6;
-
     const ehFimDeSemana = isWeekend(new Date(data));
 
     let melhorCanil = null;
