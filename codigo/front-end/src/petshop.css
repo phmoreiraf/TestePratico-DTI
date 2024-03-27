@@ -23,7 +23,7 @@ body {
 }
 
 .form-image {
-    width: 50%;
+    width: 24rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,7 +32,7 @@ body {
 }
 
 .form-image img {
-    width: 35rem;
+    width: 24rem;
 }
 
 .form {
