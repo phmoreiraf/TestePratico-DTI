@@ -1,4 +1,4 @@
-# Sistema de Petshop
+# Sistema de PetShop
 
 Este projeto é um sistema simples para encontrar o melhor petshop com base na data e na quantidade de cães pequenos e grandes.
 
