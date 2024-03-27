@@ -83,11 +83,11 @@ function Formulario({
                 <br/>
                 <br/>
                 {melhorCanil && (
-                <div>
-                    O melhor canil é {melhorCanil.nome} com um custo total de {' '}
-                    {melhorCanil.custoTotal}.
-                </div>
-            )}
+    <div>
+        O melhor canil é <strong>{melhorCanil.nome}</strong> com um custo total de {' '}
+        <strong> R${melhorCanil.custoTotal}</strong>.
+    </div>
+)}
             </div>
            
         </div>
