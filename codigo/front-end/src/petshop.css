@@ -27,12 +27,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     background-color: #fde3a7d7;
     padding: 1rem;
 }
 
 .form-image img {
-    width: 24rem;
+    width: 25rem;
 }
 
 .form {
