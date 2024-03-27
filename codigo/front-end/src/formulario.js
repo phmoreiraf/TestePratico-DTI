@@ -1,7 +1,7 @@
 import React from 'react';
 import MinhaImagem from './assets/doguinho.jpg';
-import MinhaImagem2 from './assets/doguinho.jpg';
-import MinhaImagem3 from './assets/doguinho.jpg';
+import MinhaImagem2 from './assets/doguinho2.jpg';
+import MinhaImagem3 from './assets/doguinho3.jpg';
 
 function Formulario({
     data,
