@@ -7,7 +7,7 @@ Este projeto é um sistema simples para encontrar o melhor petshop com base na d
 Para executar o sistema, siga as seguintes etapas:
 
 0. Usar esse sistema apenas se tiver acesso a internet.
-1. Baixe o código fonte do repositório e selecione a pasta raiz caso não queira em cada terminei digite antes `cd TestePratico-DTI-main`.
+1. Baixe o código fonte do repositório e selecione a pasta raiz, caso não queira em cada terminal digite antes `cd TestePratico-DTI-main` ou `cd o nome da pasta baixada e extraída`.
 2. Navegue até a pasta do back-end pelo terminal: `cd codigo/back-end` pelo terminal.
 3. Instale as dependências necessárias com `npm install` pelo terminal.
 4. Inicie o servidor com `node servidor.js` pelo terminal.
