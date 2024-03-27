@@ -17,6 +17,12 @@ Para executar o sistema, siga as seguintes etapas:
 8. O aplicativo estará disponível em http://localhost:3000.
 9. Dentro do sistema coloque o zoom do navegador o menor possivel para poder visualizar tudo.
 
+Videos
+
+Video usando a partir do github desktop - 
+
+Video usando a partir do repositório baixado - 
+
 ## Lista de premissas assumidas
 
 - O usuário pode fornecer uma data no formato dd/mm/aaaa.
@@ -30,6 +36,8 @@ Para executar o sistema, siga as seguintes etapas:
 - Foi usado o getday para selecionar se o dia é final de semana ou não.
 - Foi usado o framework Create React App no front-end do projeto.
 - Foi usada a biblioteca Axios do react no front-end para fazer solicitações HTTP.
+- Foi usado o HTML e o CSS para o layout do sistema.
+- O sistema foi divido seguinte o processo de modularidade.
 
 ## O que mais é importante compartilhar sobre o projeto
 
