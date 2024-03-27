@@ -17,7 +17,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #0c0ce94d;
+    background: #DCDCDC;
 }
 
 .container {
@@ -30,12 +30,12 @@ body {
 }
 
 .form-image {
-    width: 27rem;
+    width: 29.6rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #fde3a7d7;
+    background-color: #DCDCDC;
     padding: 0.5rem;
 }
 
