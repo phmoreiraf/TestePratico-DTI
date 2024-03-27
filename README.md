@@ -15,6 +15,7 @@ Para executar o sistema, siga as seguintes etapas:
 6. Instale as dependências necessárias com `npm install` pelo terminal.
 7. Inicie o aplicativo com `npm start` pelo terminal.
 8. O aplicativo estará disponível em http://localhost:3000.
+9. Dentro do sistema coloque o zoom do navegador o menor possivel para poder visualizar tudo.
 
 ## Lista de premissas assumidas
 

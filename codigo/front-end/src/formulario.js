@@ -15,7 +15,6 @@ function Formulario({
 }) {
     const handleSubmit = (event) => {
         event.preventDefault(); // Impede o comportamento padrão do formulário
-
         // Chama a função para encontrar o melhor canil
         encontrarMelhorCanil();
     };
@@ -34,7 +33,6 @@ function Formulario({
                             <h1>Formulário de consulta - Melhor Canil</h1>
                         </div>
                     </div>
-
                     <div className="input-group">
                         <div className="input-box">
                             <label htmlFor="data">Data</label>
@@ -48,7 +46,6 @@ function Formulario({
                                 required
                             />
                         </div>
-
                         <div className="input-box">
                             <label htmlFor="caesPequenos">Quantidade de Cães Pequenos</label>
                             <input 
@@ -61,7 +58,6 @@ function Formulario({
                                 required
                             />
                         </div>
-
                         <div className="input-box">
                             <label htmlFor="caesGrandes">Quantidade de Cães Grandes</label>
                             <input 
@@ -75,7 +71,6 @@ function Formulario({
                             />
                         </div>
                     </div>
-
                     <div className="continue-button">
                         <button type="submit">Consultar</button>
                     </div>
@@ -83,13 +78,12 @@ function Formulario({
                 <br/>
                 <br/>
                 {melhorCanil && (
-    <div>
-        O melhor canil é <strong>{melhorCanil.nome}</strong> com um custo total de {' '}
-        <strong> R${melhorCanil.custoTotal}</strong>.
-    </div>
-)}
+                    <div>
+                        O melhor canil é <strong>{melhorCanil.nome}</strong> com um custo total de {' '}
+                        <strong> R${melhorCanil.custoTotal}</strong>.
+                    </div>
+                )}
             </div>
-           
         </div>
     );
 }
