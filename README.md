@@ -20,6 +20,7 @@ Para executar o sistema, siga as seguintes etapas:
 Videos
 
 Video usando a partir do github desktop - 
+
 Video usando a partir do repositório baixado - 
 
 ## Lista de premissas assumidas
