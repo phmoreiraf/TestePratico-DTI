@@ -8,7 +8,7 @@ Para executar o sistema, siga as seguintes etapas:
 
 0. Usar esse sistema apenas se tiver acesso a internet.
 1. Baixe o código fonte do repositório e selecione a pasta raiz.
-2. Navegue até a pasta do back-end pelo terminal: `cd codigo/back-end`.
+2. Navegue até a pasta do back-end pelo terminal: `cd codigo/back-end` pelo terminal.
 3. Instale as dependências necessárias com `npm install` pelo terminal.
 4. Inicie o servidor com `node servidor.js` pelo terminal.
 5. Em outro terminal navegue até a pasta do front-end: `cd codigo/front-end` pelo terminal.
