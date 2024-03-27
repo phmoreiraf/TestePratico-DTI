@@ -5,6 +5,11 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+// Função corrigida para considerar sábado como final de semana
+const isWeekend = (date) => {
+    const day = date.getDay(); // 0 = domingo, 1 = segunda, ..., 6 = sábado
+    return day === 0 || day === 6; // sábado (6) e domingo (0) são considerados fim de semana
+};
 
 function encontrarMelhorCanil(data, caesPequenos, caesGrandes) {
     const canis = [
@@ -20,8 +25,8 @@ function encontrarMelhorCanil(data, caesPequenos, caesGrandes) {
 
     for (const canil of canis) {
         const custo = ehFimDeSemana ?
-            (canil.fimDeSemana.pequeno * caesPequenos) + (canil.fimDeSemana.grande * caesGrandes) :
-            (canil.diaDaSemana.pequeno * caesPequenos) + (canil.diaDaSemana.grande * caesGrandes);
+            canil.fimDeSemana.pequeno * caesPequenos + canil.fimDeSemana.grande * caesGrandes :
+            canil.diaDaSemana.pequeno * caesPequenos + canil.diaDaSemana.grande * caesGrandes;
 
         if (custo < custoMinimo || (custo === custoMinimo && canil.distancia < melhorCanil.distancia)) {
             melhorCanil = canil;
