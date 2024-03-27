@@ -17,7 +17,7 @@ Para executar o sistema, siga as seguintes etapas:
 8. O aplicativo estará disponível em http://localhost:3000.
 9. Dentro do sistema coloque o zoom do navegador o menor possivel para poder visualizar tudo.
 
-Videos de utilização Parte 1 e Parte 2 - https://www.youtube.com/playlist?list=PLZqt5cSyh2OQ7sCyGt4Hu28hDzgrHv5z8
+Videos de utilização - Parte 1 e Parte 2 - https://www.youtube.com/playlist?list=PLZqt5cSyh2OQ7sCyGt4Hu28hDzgrHv5z8
 
 ## Lista de premissas assumidas
 
