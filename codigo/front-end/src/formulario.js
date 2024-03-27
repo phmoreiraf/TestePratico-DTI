@@ -31,7 +31,7 @@ function Formulario({
                 <form id="intention-form" onSubmit={handleSubmit}>
                     <div className="form-header">
                         <div className="title">
-                            <h1>Formulário de consulta - Canil</h1>
+                            <h1>Formulário de consulta - Melhor Canil</h1>
                         </div>
                     </div>
 
