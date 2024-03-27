@@ -1,6 +1,6 @@
 # Sistema de PetShop
 
-Este projeto é um sistema simples para encontrar o melhor petshop com base na data e na quantidade de cães pequenos e grandes.
+Este projeto esta associado ao processo seletivo da empresa DTI digital e consiste em um sistema simples para encontrar o melhor petshop com base na data e na quantidade de cães pequenos e grandes.
 
 ## Instruções para executar o sistema
 
