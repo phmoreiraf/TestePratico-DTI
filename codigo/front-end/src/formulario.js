@@ -22,6 +22,8 @@ function Formulario({
         <div className="container">
             <div className="form-image">
                 <img src={MinhaImagem} alt="Imagem cachorro" />
+                <img src={MinhaImagem2} alt="Imagem cachorro2" />
+                <img src={MinhaImagem3} alt="Imagem cachorro3" />
             </div>
             <div className="form">
                 <form id="intention-form" onSubmit={handleSubmit}>
