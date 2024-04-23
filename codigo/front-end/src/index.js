@@ -4,10 +4,9 @@ import App from "./App.js";
 
 const root = createRoot(document.getElementById("root"));
 
-root.render( <
-    React.StrictMode >
-    <
-    App / >
-    <
-    /React.StrictMode>
+// Renderiza o aplicativo dentro de <React.StrictMode>
+root.render(
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>
 );
